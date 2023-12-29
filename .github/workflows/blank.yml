@@ -36,7 +36,7 @@ jobs:
         echo "{}" > epic/src/config.json
         cd epic/src/ && python3 claim.py
     - name: Setup GIT user
-      uses: fregante/setup-git-user@v1
+      uses: fregante/setup-git-user@v2
     - name: 缓存身份令牌
       run: |
         if [ -d "epic/user_data_dir" ];then cp -rfp epic/user_data_dir . ; fi
