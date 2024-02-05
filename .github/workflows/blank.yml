@@ -13,7 +13,7 @@ jobs:
       FAKE_HASH: "Automated deployment @ $(date '+%Y-%m-%d %H:%M:%S') Asia/Shanghai"
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: 初始化环境 & 拉取项目
       run: |
         sudo timedatectl set-timezone "Asia/Shanghai"
